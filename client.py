@@ -53,6 +53,7 @@ class API(object):
                         }
                     )
                     return self.token
+                return response
             except requests.exceptions.ConnectionError:
                 if (retry_count + 1 == self.max_retries):
                     raise

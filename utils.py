@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-from client import Client
-
 
 def login(client, email, password, debug=False):
     '''
@@ -37,4 +35,3 @@ def get_customer(client, id):
     Retrieves a specific customer
     '''
     return client.get(endpoint='customers/' + str(id))
-
